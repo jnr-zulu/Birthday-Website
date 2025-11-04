@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Quiz Section -->
+        <div id="quiz-section" class="section active">
+            <div class="heart-animation">❤️</div>
+            <h1>Before We Begin...</h1>
+            <p class="intro-text">Answer these questions to unlock something special 💕</p>
+            
+            <div class="question-container">
+                <div class="question active" id="question-1">
+                    <h2>Question 1</h2>
+                    <p>When did our beautiful journey together begin? 🌟</p>
+                    <input type="date" id="anniversary-input" class="date-input">
+                    <p class="hint" id="hint-1"></p>
+                    <button onclick="checkAnswer(1)" class="btn">Submit</button>
+                </div>
+
+                <div class="question" id="question-2">
+                    <h2>Question 2</h2>
+                    <p>What's the date of the most special girl in the world's birthday? 🎂</p>
+                    <input type="date" id="birthday-input" class="date-input">
+                    <p class="hint" id="hint-2"></p>
+                    <button onclick="checkAnswer(2)" class="btn">Submit</button>
+                </div>
+
+                <div class="question" id="question-3">
+                    <h2>Question 3</h2>
+                    <p>And when does your favorite person celebrate his birthday? 😊</p>
+                    <input type="date" id="my-birthday-input" class="date-input">
+                    <p class="hint" id="hint-3"></p>
+                    <button onclick="checkAnswer(3)" class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div id="main-section" class="section">
+            <div class="header">
+                <h1>20 Reasons Why I Love You 💕</h1>
+                <p class="subtitle">Happy Birthday, My Beautiful Girl</p>
+            </div>
+            
+            <div class="message-container">
+                <div id="message-display" class="message-box">
+                    <p id="message-text"></p>
+                </div>
+                <button onclick="showNewMessage()" class="btn btn-large">Show Me Another Reason ❤️</button>
+            </div>
+
+            <div class="counter">
+                <p>Messages shown: <span id="counter">0</span> / 20</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
